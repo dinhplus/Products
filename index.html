@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="node_modules/axios/dist/axios.js"></script>
+    <script src="script.js"></script>
+    <title>Product Manager</title>
+</head>
+
+<body>
+    <h1 style="color: red;">Product Manger</h1>
+    <hr>
+    <div class="container">
+        <div class="item-1" id="create-product">
+            <button id="add-prouct" onclick=addProduct()>
+				Add Product
+			</button>
+        </div>
+        <div id="product-list" class="item-2" onfocus=renderData()>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>id</th>
+                        <th>Tên sản phẩm</th>
+                        <th>Giá</th>
+                        <th>Loại</th>
+                        <th>Số lượng</th>
+                        <th> Tính năng</th>
+                    </tr>
+                </thead>
+                <tbody id="body-list">
+                    <!-- <tr>
+                        <td scope="row"></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr> -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+
+</html>
